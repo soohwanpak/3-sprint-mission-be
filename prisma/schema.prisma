@@ -23,7 +23,9 @@ model Product {
 model Article {
   id             String           @id @default(uuid())
   title          String
+  user           String
   content        String
+  like           Int              @default(0)
   createdAt      DateTime         @default(now())
   updatedAt      DateTime         @updatedAt
   ArticleComment ArticleComment[]

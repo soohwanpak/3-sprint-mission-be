@@ -111,76 +111,26 @@ export const Products = [
 
 
 export const Articles = [
-    {
-        id: '8f945b19-11f7-4b5b-b935-18d742f60e59',
-        title: '2023년 가을 패션 트렌드',
-        content: '2023년 가을 시즌의 패션 트렌드에 대해 소개합니다. 다양한 스타일을 소개하니 참고하세요.',
-        createdAt: '2023-09-10T10:00:00Z',
-        updatedAt: '2023-09-10T10:00:00Z',
-    },
-    {
-        id: '9b3b13e9-4c66-4f9d-b227-b8f09a1e5a55',
-        title: '아이폰 14 리뷰',
-        content: '아이폰 14의 새로운 기능과 성능에 대해 알아봅니다. 최신 스마트폰을 구매하고 싶다면 필독!',
-        createdAt: '2023-09-15T10:00:00Z',
-        updatedAt: '2023-09-15T10:00:00Z',
-    },
-    {
-        id: '2a56bcbf-cb0e-420f-8a7a-e405d775bcb9',
-        title: '디지털 카메라 구매 가이드',
-        content: '디지털 카메라를 구매할 때 고려해야 할 주요 요소들에 대해 다뤄봅니다. 초보자도 쉽게 이해할 수 있는 팁을 제공합니다.',
-        createdAt: '2023-09-20T14:30:00Z',
-        updatedAt: '2023-09-20T14:30:00Z',
-    },
-    {
-        id: '6a267bc0-3a7a-4096-bc6d-ea6fe37e3d4b',
-        title: '2023년 가을 여행지 추천',
-        content: '가을에 떠나기 좋은 여행지를 추천합니다. 자연을 만끽하며 여유로운 시간을 보내세요.',
-        createdAt: '2023-10-01T10:00:00Z',
-        updatedAt: '2023-10-01T10:00:00Z',
-    },
-    {
-        id: '5432bf0f-b0d0-4a93-8978-e3c6989e5c07',
-        title: '헤드폰 추천 5가지',
-        content: '음질과 편안함을 겸비한 헤드폰 5종을 소개합니다. 개인적인 취향에 맞는 모델을 찾아보세요.',
-        createdAt: '2023-10-10T11:00:00Z',
-        updatedAt: '2023-10-10T11:00:00Z',
-    },
-    {
-        id: 'd9a4c4d3-bf3b-4c0e-9bdb-d9cf0f99b4b0',
-        title: '소니 헤드폰 리뷰',
-        content: '소니의 새로운 무선 헤드폰을 테스트해봤습니다. 음악 감상에 최적인 이 제품을 리뷰합니다.',
-        createdAt: '2023-10-15T14:00:00Z',
-        updatedAt: '2023-10-15T14:00:00Z',
-    },
-    {
-        id: '849c9978-e460-4935-a2c1-c4de377df215',
-        title: '운동화를 고를 때 알아야 할 팁',
-        content: '운동화를 고를 때 중요한 점들을 소개합니다. 다양한 옵션을 살펴보세요.',
-        createdAt: '2023-10-20T16:00:00Z',
-        updatedAt: '2023-10-20T16:00:00Z',
-    },
-    {
-        id: '8fd648b1-c36f-4410-89ae-4e68202a3b3c',
-        title: '디올 립스틱 완벽 가이드',
-        content: '디올 립스틱을 고를 때 참고할 수 있는 가이드를 제공합니다. 다양한 색상과 질감의 립스틱을 소개합니다.',
-        createdAt: '2023-10-22T12:00:00Z',
-        updatedAt: '2023-10-22T12:00:00Z',
-    },
-    {
-        id: 'db19b7bc-9bb6-4b73-b697-019f0d0b9452',
-        title: '아이폰 14 카메라 리뷰',
-        content: '아이폰 14의 카메라는 어떤 성능을 자랑하는지 알아봅니다. 사진 촬영 시 유용한 팁도 제공합니다.',
-        createdAt: '2023-10-25T10:00:00Z',
-        updatedAt: '2023-10-25T10:00:00Z',
-    },
-    {
-        id: 'b03df16a-6310-43c7-87b6-4171a57872e0',
-        title: '2023년 연말 쇼핑 가이드',
-        content: '2023년 연말을 맞이하여 쇼핑을 즐길 수 있는 가이드를 제공합니다. 특별한 제품을 찾는 방법을 소개합니다.',
-        createdAt: '2023-11-01T13:00:00Z',
-        updatedAt: '2023-11-01T13:00:00Z',
-    },
+    { "title": "프로그래밍의 즐거움", "user": "코딩팬더", "content": "프로그래밍은 정말 재미있습니다. 도전해보세요!", "like": 120, "createdAt": "2024-11-03T14:21:36Z" },
+    { "title": "Next.js vs React", "user": "개발초보", "content": "Next.js의 장점은 서버 사이드 렌더링입니다.", "like": 85, "createdAt": "2024-11-05T09:43:18Z" },
+    { "title": "프론트엔드 개발자를 위한 팁", "user": "유능한개발자", "content": "Flexbox와 Grid는 꼭 익히세요!", "like": 60, "createdAt": "2024-11-08T16:37:22Z" },
+    { "title": "백엔드 개발 시작하기", "user": "백엔드달인", "content": "Node.js를 배우면 백엔드 입문이 쉬워집니다.", "like": 95, "createdAt": "2024-11-11T12:59:49Z" },
+    { "title": "React 상태 관리 방법", "user": "리액트고수", "content": "Redux와 Context API의 차이를 알아봅시다.", "like": 70, "createdAt": "2024-11-15T18:45:11Z" },
+    { "title": "CSS 애니메이션", "user": "애니메이션장인", "content": "CSS로 다양한 애니메이션을 만들어보세요!", "like": 110, "createdAt": "2024-11-17T08:22:30Z" },
+    { "title": "알고리즘 문제 풀이 팁", "user": "알고리즘광", "content": "시간 복잡도를 줄이는 방법에 대해 알아봅시다.", "like": 65, "createdAt": "2024-11-20T21:10:45Z" },
+    { "title": "HTML5의 새로운 태그", "user": "HTML매니아", "content": "Semantic 태그는 접근성 향상에 중요합니다.", "like": 45, "createdAt": "2024-11-23T10:05:19Z" },
+    { "title": "GraphQL 사용법", "user": "그래프큐엘러", "content": "GraphQL로 효율적인 API를 만들어보세요.", "like": 90, "createdAt": "2024-11-25T15:34:27Z" },
+    { "title": "JavaScript ES6+ 기능", "user": "JS덕후", "content": "Arrow function과 Spread Operator를 익혀봅시다.", "like": 100, "createdAt": "2024-11-28T22:18:41Z" },
+    { "title": "타입스크립트의 장점", "user": "TS전도사", "content": "타입 안정성은 개발 효율성을 높입니다.", "like": 80, "createdAt": "2024-11-02T11:24:53Z" },
+    { "title": "Python으로 데이터 분석", "user": "파이썬분석가", "content": "Pandas와 NumPy로 데이터를 다뤄봅시다.", "like": 75, "createdAt": "2024-11-06T13:42:12Z" },
+    { "title": "DevOps 시작하기", "user": "데브옵스광", "content": "CI/CD 파이프라인을 구축해보세요.", "like": 55, "createdAt": "2024-11-10T19:07:38Z" },
+    { "title": "Docker와 컨테이너 기술", "user": "컨테이너장인", "content": "Docker로 애플리케이션 배포를 간단하게 해보세요.", "like": 65, "createdAt": "2024-11-14T06:56:00Z" },
+    { "title": "AWS 클라우드 활용", "user": "클라우드초보", "content": "AWS EC2로 서버를 배포해보세요.", "like": 95, "createdAt": "2024-11-18T14:20:33Z" },
+    { "title": "MongoDB와 Mongoose", "user": "몽고DB전문가", "content": "NoSQL의 장점을 살려 데이터를 관리하세요.", "like": 50, "createdAt": "2024-11-21T17:29:17Z" },
+    { "title": "PostgreSQL 활용법", "user": "DB전문가", "content": "SQL 쿼리 작성법과 데이터베이스 구조화 팁.", "like": 90, "createdAt": "2024-11-24T09:43:51Z" },
+    { "title": "오픈소스 기여하기", "user": "오픈소스광", "content": "GitHub를 활용해 오픈소스 프로젝트에 기여하세요.", "like": 120, "createdAt": "2024-11-26T12:12:59Z" },
+    { "title": "VS Code 플러그인 추천", "user": "에디터마스터", "content": "생산성을 높이는 플러그인을 알아봅시다.", "like": 85, "createdAt": "2024-11-29T16:04:21Z" },
+    { "title": "웹 개발의 미래", "user": "웹비전가", "content": "웹 애플리케이션의 발전 방향을 예측해봅시다.", "like": 75, "createdAt": "2024-11-30T20:31:48Z" }
 ];
 
 export const ProductComments = [
@@ -246,43 +196,5 @@ export const ProductComments = [
         productId: 'e9e5c8e7-d92c-4b09-b662-29cc32dbdc55',
         createdAt: '2023-10-06T10:20:00Z',
         updatedAt: '2023-10-06T10:20:00Z',
-    },
-];
-
-export const ArticleComments = [
-    {
-        id: 'b953e582-c85a-4c3f-bbfe-f1cc96b34a25',
-        content: '2023년 가을 패션 트렌드 정말 유용한 정보였어요!',
-        articleId: '8f945b19-11f7-4b5b-b935-18d742f60e59',
-        createdAt: '2023-09-11T12:00:00Z',
-        updatedAt: '2023-09-11T12:00:00Z',
-    },
-    {
-        id: 'c51943c3-8eaf-4b8d-bf30-6512e7dfd79b',
-        content: '아이폰 14 리뷰 정말 도움이 되었습니다. 감사해요!',
-        articleId: '9b3b13e9-4c66-4f9d-b227-b8f09a1e5a55',
-        createdAt: '2023-09-16T12:15:00Z',
-        updatedAt: '2023-09-16T12:15:00Z',
-    },
-    {
-        id: '4f9c4213-b5be-463f-89e4-8e5be993ea53',
-        content: '디지털 카메라 리뷰 잘 읽었습니다. 너무 많은 옵션들이 있어서 고르기 어렵네요.',
-        articleId: '2a56bcbf-cb0e-420f-8a7a-e405d775bcb9',
-        createdAt: '2023-09-21T11:00:00Z',
-        updatedAt: '2023-09-21T11:00:00Z',
-    },
-    {
-        id: 'fbe38b84-b3ca-47b9-9907-f06f315b9c83',
-        content: '여행지 추천 너무 좋습니다. 특히 자연을 좋아하는 사람에게 완벽할 것 같아요.',
-        articleId: '6a267bc0-3a7a-4096-bc6d-ea6fe37e3d4b',
-        createdAt: '2023-10-02T13:45:00Z',
-        updatedAt: '2023-10-02T13:45:00Z',
-    },
-    {
-        id: 'de3782da-8a7a-4e8b-b8d8-b9b5a7f6d4b4',
-        content: '헤드폰 추천 리스트 참고해서 구입했어요. 정말 만족합니다.',
-        articleId: '5432bf0f-b0d0-4a93-8978-e3c6989e5c07',
-        createdAt: '2023-10-06T15:00:00Z',
-        updatedAt: '2023-10-06T15:00:00Z',
     },
 ];

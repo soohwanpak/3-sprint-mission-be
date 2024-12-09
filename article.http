@@ -1,8 +1,8 @@
 ### 게시글 조회 , id로 조회
-GET http://localhost:8000/article/7c328783-42ef-4194-a71a-0c4c6925919a
+GET http://localhost:8000/article/ca5f35a6-966c-4b49-93ee-22e4d0172680
 
 ### 게시글 목록조회
-GET http://localhost:8000/article/articleList
+GET http://localhost:8000/article/articleList?pageSize=6
 
 ###
 # 게시글 생성
@@ -26,7 +26,7 @@ Content-Type: application/json
 
 ###
 #게시글 삭제 , 게시글이 지워지면  댓글이 지워지는지 테스트 확인
-DELETE http://localhost:8000/article/7c328783-42ef-4194-a71a-0c4c6925919a
+DELETE http://localhost:8000/article/69ff0289-ab70-44c5-9085-756ecc744943
 
 
 
@@ -44,8 +44,8 @@ POST http://localhost:8000/articleComment
 Content-Type: application/json
 
 {
-  "content" : "댓글 테스트14",
-  "articleId" : "093b306d-7cf2-4f8d-a03d-04523e4c940a"
+  "content" : "댓글3",
+  "articleId" : "86edcdd8-798e-45d1-819d-46ea6b0ff06a"
 }
 
 ###
@@ -60,3 +60,5 @@ Content-Type: application/json
 ###
 #댓글 삭제 / 댓글id로 삭제
 DELETE http://localhost:8000/articleComment/65c0d702-f627-4f50-b884-8d9a96f03615
+
+DELETE http://localhost:8000/article/69ff0289-ab70-44c5-9085-756ecc744943

@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/client';
-import { Products, Articles, ProductComments, ArticleComments } from './mock.js';
+import { Products, Articles, ProductComments} from './mock.js';
 
 const prisma = new PrismaClient();
 
@@ -25,9 +25,6 @@ async function main() {
         data: ProductComments,
     });
 
-    await prisma.articleComment.createMany({
-        data: ArticleComments,
-    });
 }
 
 main()
