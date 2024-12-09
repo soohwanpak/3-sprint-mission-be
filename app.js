@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(
     cors({
-        origin: ['http://localhost:3000', 'https://three-sprint-mission-fe.netlify.app'],
+        origin: ['http://localhost:3000', 'https://extraordinary-fox-f974c8.netlify.app'],
         credentials: true,
     })
 );
