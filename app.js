@@ -8,8 +8,7 @@ import commentRoutes from './router/commentRouter.js';
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: 'https://incredible-conkies-2bfde0.netlify.app',
-    credentials: true
+    origin: '*',
   }));
 
 app.use('/article', articleRoutes);
