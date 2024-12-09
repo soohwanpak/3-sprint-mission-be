@@ -7,12 +7,7 @@ import commentRoutes from './router/commentRouter.js';
 
 const app = express();
 app.use(express.json());
-app.use(
-    cors({
-        origin: ['http://localhost:3000', 'https://extraordinary-fox-f974c8.netlify.app'],
-        credentials: true,
-    })
-);
+app.use(cors());
 
 app.use('/article', articleRoutes);
 app.use('/articleComment', commentRoutes);
