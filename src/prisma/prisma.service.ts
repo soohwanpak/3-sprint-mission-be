@@ -8,7 +8,7 @@ export class PrismaService extends PrismaClient implements OnModuleInit {
     super({
       datasources: {
         db: {
-          url: config.get<string>('DATABASE_URL'), // ✅ ConfigService 정상적으로 주입됨
+          url: config.get<string>('DATABASE_URL'),
         },
       },
     });

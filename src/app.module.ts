@@ -13,9 +13,13 @@ import { ImageModule } from './image/image.module';
 import { AuthController } from './auth/auth.controller';
 import { AuthService } from './auth/auth.service';
 import { AuthModule } from './auth/auth.module';
+import { PrismaModule } from './prisma/prisma.module';
+import { JwtGlobalModule } from './auth/jwt.module';
 
 @Module({
   imports: [
+    JwtGlobalModule,
+    PrismaModule,
     CommentModule,
     UserModule,
     ArticleModule,
