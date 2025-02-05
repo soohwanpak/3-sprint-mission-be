@@ -29,6 +29,7 @@ model Product {
   name        String
   description String
   price       Int
+  like        Int
   userId      String
   createdAt   DateTime @default(now())
   imageUrl    String   @db.VarChar(2048)

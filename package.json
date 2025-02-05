@@ -10,6 +10,7 @@
     "npm": ">=10"
   },
   "scripts": {
+    "prisma:seed": "ts-node prisma/seed.ts",
     "prisma:generate": "npx prisma generate",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",

@@ -15,3 +15,6 @@ Content-Type: application/json
   "email": "test@example.com",
   "password": "securepassword"
 }
+
+###
+GET http://localhost:8000/product
