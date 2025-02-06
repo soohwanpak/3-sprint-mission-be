@@ -29,7 +29,7 @@ model Product {
   name        String
   description String
   price       Int
-  like        Int
+  like        Int      @default(0)
   userId      String
   createdAt   DateTime @default(now())
   imageUrl    String   @db.VarChar(2048)
@@ -45,6 +45,7 @@ model Article {
   id        String   @id @default(uuid())
   title     String   @db.VarChar(255)
   content   String
+  like      Int      @default(0)
   imageUrl  String?  @db.VarChar(2048)
   userId    String
   createdAt DateTime @default(now())

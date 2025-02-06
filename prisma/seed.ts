@@ -98,6 +98,44 @@ async function main() {
     },
   ];
 
+  const articles = [
+    {
+      title: '첫 번째 게시글',
+      content: '이것은 첫 번째 게시글입니다.',
+      imageUrl: 'https://example.com/article1.jpg',
+      like: 0,
+      userId,
+    },
+    {
+      title: '두 번째 게시글',
+      content: '이것은 두 번째 게시글입니다.',
+      imageUrl: 'https://example.com/article2.jpg',
+      like: 0,
+      userId,
+    },
+    {
+      title: '세 번째 게시글',
+      content: '이것은 세 번째 게시글입니다.',
+      imageUrl: 'https://example.com/article3.jpg',
+      like: 0,
+      userId,
+    },
+    {
+      title: '네 번째 게시글',
+      content: '이것은 네 번째 게시글입니다.',
+      imageUrl: 'https://example.com/article4.jpg',
+      like: 0,
+      userId,
+    },
+    {
+      title: '다섯 번째 게시글',
+      content: '이것은 다섯 번째 게시글입니다.',
+      imageUrl: 'https://example.com/article5.jpg',
+      like: 0,
+      userId,
+    },
+  ];
+
   for (const product of products) {
     await prisma.product.create({
       data: {
@@ -108,6 +146,17 @@ async function main() {
         userId: product.userId,
         imageUrl: product.imageUrl,
         tags: product.tags,
+      },
+    });
+  }
+
+  for (const article of articles) {
+    await prisma.article.create({
+      data: {
+        title: article.title,
+        content: article.content,
+        imageUrl: article.imageUrl,
+        userId: article.userId,
       },
     });
   }

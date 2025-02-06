@@ -18,3 +18,16 @@ Content-Type: application/json
 
 ###
 GET http://localhost:8000/product
+
+###
+DELETE http://localhost:8000/productComment/9ca08eab49c4
+
+###
+POST http://localhost:8000/article
+Content-Type: application/json
+
+{
+  "title": "새로운 게시글",
+  "content": "게시글 내용입니다.",
+  "imageUrl": "https://example.com/image.jpg"
+}

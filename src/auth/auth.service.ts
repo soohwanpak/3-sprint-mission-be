@@ -52,7 +52,6 @@ export class AuthService {
     };
   }
 
-  // ✅ Refresh Token을 이용한 Access Token 갱신
   async refreshAccessToken(refreshToken: string) {
     try {
       const decoded = this.jwtService.verify(refreshToken, {
@@ -65,19 +64,16 @@ export class AuthService {
       if (!user || !user.refreshToken)
         throw new UnauthorizedException('유효하지 않은 Refresh Token입니다.');
 
-      // 저장된 Refresh Token과 비교
       const isMatch = await bcrypt.compare(refreshToken, user.refreshToken);
       if (!isMatch)
         throw new UnauthorizedException('토큰이 일치하지 않습니다.');
 
-      // 새로운 Access Token 발급
       return this.generateTokens(user.id, user.email);
     } catch (error) {
       throw new UnauthorizedException('토큰이 유효하지 않습니다.');
     }
   }
 
-  // ✅ 로그아웃 (Refresh Token 삭제)
   async logout(userId: string) {
     await this.prisma.user.update({
       where: { id: userId },
