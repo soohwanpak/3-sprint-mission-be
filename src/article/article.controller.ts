@@ -31,10 +31,10 @@ export class ArticleController {
   async getAllArticles(
     @Query('sort') sort: string = 'latest',
     @Query('search') search?: string,
+    @Query('pageSize') pageSize: string = '6',
   ) {
-    return this.articleService.getAllArticles(sort, search);
+    return this.articleService.getAllArticles(sort, search, Number(pageSize));
   }
-  ㅕㅕ;
 
   @Get('best')
   async getBestArticles() {

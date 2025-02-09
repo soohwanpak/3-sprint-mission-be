@@ -21,18 +21,28 @@ export class ArticleService {
     });
   }
 
-  async getAllArticles(sort: string, search?: string) {
-    return this.prisma.article.findMany({
-      where: {
-        OR: search
-          ? [{ title: { contains: search } }, { content: { contains: search } }]
-          : undefined,
-      },
+  async getAllArticles(sort: string, search?: string, pageSize: number = 6) {
+    const whereCondition = search
+      ? {
+          OR: [
+            { title: { contains: search } },
+            { content: { contains: search } },
+          ],
+        }
+      : {};
+
+    const total = await this.prisma.article.count({ where: whereCondition });
+
+    const articles = await this.prisma.article.findMany({
+      where: whereCondition,
       orderBy: sort === 'like' ? { like: 'desc' } : { createdAt: 'desc' },
       include: {
         user: { select: { nickname: true } },
       },
+      take: pageSize,
     });
+
+    return { articles, total };
   }
 
   async getBestArticles() {
